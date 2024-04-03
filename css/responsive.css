@@ -1,0 +1,48 @@
+@media screen and (max-width: 992px) {
+    
+    .nav-bar .menu{
+        position: absolute;
+        padding:  3rem 1rem;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        /* height: calc(100vh - 100px); */
+        background-color: var(--green-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        z-index: 999;
+        gap: .8rem;
+        align-items:stretch;
+        transform: translateY(-120%);
+        transition: all 1s;
+
+    }
+    .requst-btn button{
+        margin-left: 0;
+        width: 100%;
+    }
+    .open-menu i{
+        font-size: 2rem;
+    }
+    .close-menu{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 1rem;
+        padding: 3px 13px ;
+        cursor: pointer;
+        text-align: center;
+        border-radius: 5px;
+        background-color: var(--black-color);
+        color: var(--grey-color);
+    }
+
+    .nav-bar .open-menu, .nav-bar .close-menu{
+        display: block;
+    }
+    #check:checked ~ .menu{
+        transform: translateX(0);
+    }
+    
+}
