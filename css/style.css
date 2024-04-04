@@ -1,5 +1,5 @@
 /* font-family: "Space Grotesk"; */
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 :root {
   --black-color: #000000;
   --green-color: #b9ff66;
@@ -24,6 +24,9 @@ body {
 .wrapper {
   padding: 0.5rem 1rem;
 }
+
+/* nav-bar style */
+
 .nav-bar {
   display: flex;
   justify-content: space-between;
@@ -56,20 +59,79 @@ body {
   padding: 0.7rem 1.3rem;
   cursor: pointer;
   border-radius: 14px;
-  font-size: 20px;
+  font-size: 1.1rem;
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
 }
 .nav-bar ul li:hover a,
-.requst-btn:hover button {
+.requst-btn:hover button,
+.hero-btn {
   background: #000;
   color: var(--grey-color);
 }
 input[type="checkbox"] {
-    display: none;
-  }
-  .open-menu,
-  .close-menu {
-    display: none;
-  }
+  display: none;
+}
+.open-menu,
+.close-menu {
+  display: none;
+}
+
+/* hero section  style */
+.hero-section {
+  margin-block: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 45%;
+  align-items: flex-start;
+}
+
+.hero-title {
+  /* h1 */
+  font-family: "Space Grotesk";
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.hero-p {
+  margin-block: 35px;
+  font-family: "Space Grotesk";
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 140% */
+}
+.hero-btn {
+  display: block;
+  border: 2px solid var(--black-color);
+  outline: none;
+  padding: 0.7rem 1.3rem;
+  cursor: pointer;
+  border-radius: 14px;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+.hero-btn:hover {
+  background-color: var(--green-color);
+  color: var(--dark-color);
+}
+.hero-img{
+  flex-basis: 50%;
+  width: 100%;
+}
+.hero-img img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
