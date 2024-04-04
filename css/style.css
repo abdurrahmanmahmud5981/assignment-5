@@ -5,16 +5,13 @@
   --green-color: #b9ff66;
   --dark-color: #191a23;
   --grey-color: #f3f3f3;
-  --fs-18: 18px;
-  --fs-20: 20px;
-  --fs-30: 30px;
-  --fs-40: 40px;
-  --fs-60: 60px;
+  --white-color: #ffffff;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Space Grotesk", sans-serif;
@@ -22,7 +19,7 @@ body {
   font-weight: normal;
 }
 .wrapper {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.8rem;
 }
 
 /* nav-bar style */
@@ -31,13 +28,20 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.7rem 1.4rem;
+  filter: drop-shadow(1px 1px 5px var(--green-color));
+  background-color: var(--white-color);
+  z-index: 999;
 }
 .nav-bar ul {
   display: flex;
   list-style: none;
   justify-content: space-between;
   align-items: center;
-  /* gap: 1rem; */
 }
 
 .nav-bar ul li a {
@@ -94,8 +98,6 @@ input[type="checkbox"] {
 }
 
 .hero-title {
-  /* h1 */
-  font-family: "Space Grotesk";
   font-size: 3rem;
   font-style: normal;
   font-weight: 500;
@@ -104,11 +106,10 @@ input[type="checkbox"] {
 
 .hero-p {
   margin-block: 35px;
-  font-family: "Space Grotesk";
   font-size: 1.1rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 28px; /* 140% */
+  line-height: 28px;
 }
 .hero-btn {
   display: block;
@@ -126,12 +127,158 @@ input[type="checkbox"] {
   background-color: var(--green-color);
   color: var(--dark-color);
 }
-.hero-img{
+.hero-img {
   flex-basis: 50%;
   width: 100%;
 }
-.hero-img img{
-    display: block;
-    width: 100%;
-    height: auto;
+.hero-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.illustration {
+  display: none;
+}
+
+/* company logos section style */
+.company-logos-section {
+  overflow: hidden;
+}
+.company-logos {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  animation: logo-animation 5s linear infinite;
+}
+.company-logos-section:hover .company-logos {
+  animation: none;
+}
+
+.company-logos img {
+  display: block;
+  filter: grayscale(1);
+}
+@keyframes logo-animation {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+/* services section style */
+.services-section {
+  margin-block: 100px;
+}
+.service-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.service-title {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  background-color: var(--green-color);
+  border-radius: 7px;
+  padding: 0 0.3rem;
+}
+.service-p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 26.7rem;
+}
+.service-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+}
+
+.service-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  border-radius: 45px;
+  border: 1px solid var(--dark-color);
+  background: var(--Grey, #f3f3f3);
+  box-shadow: 0px 5px 0px 0px #191a23;
+}
+.service-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.service-card-title h3 {
+  max-width: fit-content;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  background-color: var(--green-color);
+  border-radius: 7px;
+  padding: 0 0.3rem;
+}
+.service-card-img {
+  display: flex;
+  align-items: center;
+}
+.service-card-img img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.learn-more {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.learn-more i {
+  padding: 0.6rem 0.7rem;
+  font-size: 1rem;
+  border-radius: 50%;
+  transform: rotate(44deg);
+  background-color: var(--black-color);
+  color: var(--green-color);
+}
+.learn-more button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.s-card-2 h3,
+.s-card-3 h3,
+.s-card-5 h3 {
+  background-color: var(--white-color);
+}
+.s-card-1,
+.s-card-4 {
+  background-color: var(--grey-color);
+}
+.s-card-2,
+.s-card-5 {
+  background-color: var(--green-color);
+}
+.s-card-3,
+.s-card-6 {
+  background-color: var(--black-color);
+}
+.s-card-3 .learn-more i,
+.s-card-6 .learn-more i {
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
+.s-card-3 .learn-more button,
+.s-card-6 .learn-more button {
+  color: var(--white-color);
 }
