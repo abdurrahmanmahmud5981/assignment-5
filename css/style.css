@@ -70,7 +70,8 @@ body {
 }
 .nav-bar ul li:hover a,
 .requst-btn:hover button,
-.hero-btn,.proposal-btn {
+.hero-btn,
+.proposal-btn {
   background: #000;
   color: var(--grey-color);
 }
@@ -190,6 +191,7 @@ input[type="checkbox"] {
   background-color: var(--green-color);
   border-radius: 7px;
   padding: 0 0.3rem;
+  text-align: center;
 }
 .service-p {
   font-size: 18px;
@@ -321,10 +323,62 @@ input[type="checkbox"] {
   position: absolute;
   right: 0;
   bottom: 1rem;
-  transform: translate(0, .1%);
+  transform: translate(0, 0.1%);
 }
 .proposal-img img {
   display: block;
   width: 100%;
   height: auto;
+}
+/* Case study section */
+.case-study-section {
+  margin-block: 100px;
+}
+.case-study-content {
+  display: flex;
+  justify-content: stretch;
+  /* align-items: center; */
+  background-color: var(--black-color);
+  color: var(--white-color);
+  border-radius: 45px;
+  padding: 2.6rem 3rem;
+}
+.case-study-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  border-right: 1px solid var(--white-color);
+}
+.cs-card-1 {
+  padding-right: 2rem;
+}
+.cs-card-2 {
+  padding: 0rem 2rem;
+}
+.cs-card-3 {
+  padding-left: 2rem;
+  border: none;
+}
+.case-study-card p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.case-study-card button {
+  color: var(--green-color);
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  cursor: pointer;
+}
+.learn-more-icon {
+  transform: rotate(44deg);
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
 }

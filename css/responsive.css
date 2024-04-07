@@ -21,10 +21,10 @@
     gap: 1rem;
   }
   /*proposal section   */
-  .proposal-content{
+  .proposal-content {
     flex-basis: 100%;
   }
-  .proposal-img{
+  .proposal-img {
     display: none;
   }
 }
@@ -153,6 +153,19 @@
   .learn-more i {
     position: static;
   }
+  /* case study section */
+  .case-study-content {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .cs-card-1,
+  .cs-card-2,
+  .cs-card-3 {
+    padding: 0;
+    border: none;
+    padding-block: 1rem;
+    border-bottom: 2px solid var(--green-color);
+  }
 }
 @media screen and (max-width: 535px) {
   .wrapper {
@@ -162,7 +175,8 @@
     padding: 0.7rem 1rem;
   }
   /* hero section */
-  .hero-btn ,.proposal-btn{
+  .hero-btn,
+  .proposal-btn {
     align-self: stretch;
   }
   .hero-title {
@@ -189,19 +203,28 @@
     left: 25px;
   }
   /* proposal section */
-  .proposal-content{
+  .proposal-content {
     padding: 2rem;
   }
- 
+  /* case study section */
+  .case-study-content {
+    padding: 0;
+    background-color: transparent;
+  }
+  .case-study-card {
+    padding: 2rem 1rem;
+    border-radius: 45px;
+    background-color: var(--black-color);
+    border: none;
+  }
 }
 @media screen and (max-width: 425px) {
   /* proposal section */
-  .proposal-content{
+  .proposal-content {
     padding: 2rem 1.2rem;
   }
-  .proposal-btn{
-    padding: .6rem 1rem ;
-    font-size: .9rem;
+  .proposal-btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
   }
-  
 }
