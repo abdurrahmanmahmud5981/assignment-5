@@ -337,11 +337,10 @@ input[type="checkbox"] {
 .case-study-content {
   display: flex;
   justify-content: stretch;
-  /* align-items: center; */
   background-color: var(--black-color);
   color: var(--white-color);
   border-radius: 45px;
-  padding: 2.6rem 3rem;
+  padding: 4.67rem 3rem;
 }
 .case-study-card {
   display: flex;
@@ -381,4 +380,70 @@ input[type="checkbox"] {
   transform: rotate(44deg);
   font-size: 1.2rem;
   margin-left: 0.5rem;
+}
+
+/* our working section style */
+.our-working-section {
+  margin-block: 100px;
+}
+.working-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.wc-card-1 {
+  padding: 2.6rem 3rem;
+  border-radius: 45px;
+  border: 1px solid var(--dark-color);
+  background: var(--green-color);
+  box-shadow: 0px 5px 0px 0px var(--dark-color);
+}
+.working-card {
+  padding: 2.6rem 3rem;
+  border-radius: 45px;
+  border: 1px solid var(--dark-color);
+  background: var(--grey-color);
+  box-shadow: 0px 5px 0px 0px var(--dark-color);
+}
+.wc-text-1 {
+  border-bottom: 1px solid var(--dark-color);
+}
+.working-card-header,
+.wc-header-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.wc-header-text {
+  gap: 1rem;
+}
+.wc-header-text h2 {
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.working-card-title {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.wc-header-icon {
+  background-color: var(--white-color);
+  border: 1px solid var(--dark-color);
+  color: var(--dark-color);
+  padding: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.working-card-p {
+  margin-top: 1.5rem;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
