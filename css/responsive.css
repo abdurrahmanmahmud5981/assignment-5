@@ -20,6 +20,13 @@
   .service-content {
     gap: 1rem;
   }
+  /*proposal section   */
+  .proposal-content{
+    flex-basis: 100%;
+  }
+  .proposal-img{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 955px) {
@@ -155,7 +162,7 @@
     padding: 0.7rem 1rem;
   }
   /* hero section */
-  .hero-btn {
+  .hero-btn ,.proposal-btn{
     align-self: stretch;
   }
   .hero-title {
@@ -181,4 +188,20 @@
     bottom: 20px;
     left: 25px;
   }
+  /* proposal section */
+  .proposal-content{
+    padding: 2rem;
+  }
+ 
+}
+@media screen and (max-width: 425px) {
+  /* proposal section */
+  .proposal-content{
+    padding: 2rem 1.2rem;
+  }
+  .proposal-btn{
+    padding: .6rem 1rem ;
+    font-size: .9rem;
+  }
+  
 }
