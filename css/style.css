@@ -69,9 +69,9 @@ body {
   line-height: 28px;
 }
 .nav-bar ul li:hover a,
-.requst-btn:hover button,
 .hero-btn,
-.proposal-btn {
+.proposal-btn,
+.team-btn {
   background: #000;
   color: var(--grey-color);
 }
@@ -113,7 +113,8 @@ input[type="checkbox"] {
   line-height: 28px;
 }
 .hero-btn,
-.proposal-btn {
+.proposal-btn,
+.team-btn {
   display: block;
   border: 2px solid var(--black-color);
   outline: none;
@@ -127,7 +128,8 @@ input[type="checkbox"] {
 }
 .hero-btn:hover,
 .proposal-btn:hover,
-.requst-btn:hover button {
+.requst-btn:hover button,
+.team-btn:hover {
   background-color: var(--green-color);
   color: var(--dark-color);
 }
@@ -446,4 +448,73 @@ input[type="checkbox"] {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+/* Team section style */
+
+.team-section {
+  margin-block: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+.team-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.team-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 45px;
+  border: 1px solid var(--dark-color);
+  box-shadow: 0px 5px 0px 0px var(--dark-color);
+  padding: 40px 35px;
+}
+.team-card-content {
+  display: flex;
+  align-items: end;
+  padding-bottom: 1.4rem;
+  border-bottom: 1px solid var(--dark-color);
+  position: relative;
+  gap: 0.7rem;
+}
+
+.team-card-text p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.team-card-title {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.team-card-p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.team-icon {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0px;
+  top: 0px;
+  width: 40px;
+  height: 40px;
+  font-size: 1rem;
+  color: var(--green-color);
+  background-color: var(--black-color);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.team-btn {
+  align-self: flex-end;
 }

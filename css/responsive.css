@@ -7,6 +7,12 @@
     font-size: 1.2rem;
   }
 }
+@media only screen and (max-width: 1180px) and (min-width: 1070px) {
+  .team-icon {
+    top: -16px;
+    right: -7px;
+  }
+}
 @media screen and (max-width: 1065px) {
   /* nav-bar */
   .requst-btn {
@@ -26,6 +32,10 @@
   }
   .proposal-img {
     display: none;
+  }
+  /* team section */
+  .team-content {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -186,6 +196,10 @@
   .working-card {
     padding: 2rem 1.2rem;
   }
+  /* team section  style */
+  .team-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 @media screen and (max-width: 535px) {
   .wrapper {
@@ -196,7 +210,8 @@
   }
   /* hero section */
   .hero-btn,
-  .proposal-btn {
+  .proposal-btn,
+  .team-btn {
     align-self: stretch;
   }
   .hero-title {
@@ -237,13 +252,6 @@
     background-color: var(--black-color);
     border: none;
   }
-  /* our working section */
-  /* .wc-header-text h2 {
-    font-size: 23px;
-  }
-  .working-card-title {
-    font-size: 14px;
-  } */
 }
 @media screen and (max-width: 425px) {
   /* proposal section */
@@ -260,5 +268,10 @@
   }
   .working-card-title {
     font-size: 14px;
+  }
+  /* team section */
+  .team-icon {
+    right: -10px;
+    top: -10px;
   }
 }
