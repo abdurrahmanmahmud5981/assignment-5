@@ -215,6 +215,14 @@
   .tooltip-text {
     font-size: 0.8rem;
   }
+  /* contact section */
+  .contact-content{
+    background-image: none;
+    background-color: var(--grey-color);
+  }
+  .contact-form{
+    width: 100%;
+  }
 }
 @media screen and (max-width: 535px) {
   .wrapper {
@@ -322,5 +330,13 @@
   .testimonials-position {
     font-size: 12px;
     margin-left: 0.4rem;
+  }
+  /* contact section */
+  .contact-content{
+    padding: 2rem 1.2rem;
+  }
+  .rediobutton{
+    flex-direction: column;
+    gap: .4rem;
   }
 }

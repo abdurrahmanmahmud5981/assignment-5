@@ -73,7 +73,8 @@ body {
 .nav-bar ul li:hover a,
 .hero-btn,
 .proposal-btn,
-.team-btn {
+.team-btn ,
+.contact-btn{
   background: #000;
   color: var(--grey-color);
 }
@@ -116,7 +117,8 @@ input[type="checkbox"] {
 }
 .hero-btn,
 .proposal-btn,
-.team-btn {
+.team-btn,
+.contact-btn {
   display: block;
   border: 2px solid var(--black-color);
   outline: none;
@@ -131,7 +133,8 @@ input[type="checkbox"] {
 .hero-btn:hover,
 .proposal-btn:hover,
 .requst-btn:hover button,
-.team-btn:hover {
+.team-btn:hover,
+.contact-btn:hover {
   background-color: var(--green-color);
   color: var(--dark-color);
 }
@@ -584,4 +587,66 @@ input[type="checkbox"] {
   display: block;
   color: var(--white-color);
   margin-left: 2rem;
+}
+
+/* contact section */
+
+.contact-section {
+  margin-block: 100px;
+}
+.contact-content{
+  border-radius: 45px;
+  padding: 4rem 2rem;
+  background-image: url(../assets/images/contact-bg.png);
+  background-repeat: no-repeat;
+  background-position: 61% 10%;
+  background-size:cover;
+  
+}
+input ,.contact-form > label , textarea{
+  display: block;
+  width: 100%;
+}
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 50%;
+}
+.rediobutton{
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.6rem;
+  
+}
+.rediobutton label{
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+#radio1 , #radio{
+ accent-color: var(--green-color);
+width: 20px;
+height: 20px;
+}
+.say-hi,.get-qute{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+label{
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; 
+}
+#name,#email,#message{
+  border: 1px solid var(--black-color);
+  padding: 1rem;
+  border-radius: 14px;
+}
+#message{
+  resize: none;
 }
