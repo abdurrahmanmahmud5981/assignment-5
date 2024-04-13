@@ -117,6 +117,14 @@
     bottom: 20px;
     left: 25px;
   }
+  /* testimonial section */
+  .testimonials-content {
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .testimonials-card {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -200,6 +208,13 @@
   .team-content {
     grid-template-columns: repeat(1, 1fr);
   }
+  /* testimonial section */
+  .testimonials-content {
+    gap: 4rem;
+  }
+  .tooltip-text {
+    font-size: 0.8rem;
+  }
 }
 @media screen and (max-width: 535px) {
   .wrapper {
@@ -252,6 +267,16 @@
     background-color: var(--black-color);
     border: none;
   }
+  /* testimonial section */
+  .testimonials-content {
+    gap: 5rem;
+  }
+  .tooltip-text {
+    padding: 1.7rem 1rem;
+  }
+  .tooltip-text::after {
+    left: 14%;
+  }
 }
 @media screen and (max-width: 425px) {
   /* proposal section */
@@ -273,5 +298,29 @@
   .team-icon {
     right: -10px;
     top: -10px;
+  }
+  /* testimonial section */
+  .testimonials-content {
+    padding: 1.3rem;
+    gap: 0.5rem;
+  }
+  .testimonials-card {
+    padding: 1.2rem 1rem;
+    margin-top: 12.5rem;
+  }
+  .tooltip-text {
+    font-size: 0.6rem;
+    bottom: 100%;
+  }
+  .tooltip-text::after {
+    left: 17%;
+  }
+  .testimonials-name {
+    font-size: 18px;
+    margin-left: 0.4rem;
+  }
+  .testimonials-position {
+    font-size: 12px;
+    margin-left: 0.4rem;
   }
 }

@@ -19,6 +19,8 @@ body {
   font-weight: normal;
 }
 .wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 0.5rem 1.8rem;
 }
 
@@ -118,7 +120,7 @@ input[type="checkbox"] {
   display: block;
   border: 2px solid var(--black-color);
   outline: none;
-  padding: 0.7rem 1.3rem;
+  padding: 0.7rem 1.7rem;
   cursor: pointer;
   border-radius: 14px;
   font-size: 1.1rem;
@@ -517,4 +519,69 @@ input[type="checkbox"] {
 }
 .team-btn {
   align-self: flex-end;
+}
+
+/* testimonial section style */
+
+.testimonial-section {
+  margin-block: 100px;
+}
+.testimonials-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 7rem 2rem;
+  background-color: var(--black-color);
+  border-radius: 45px;
+}
+
+.testimonials-card {
+  position: relative;
+  display: inline-block;
+  margin-top: 13rem;
+  flex-basis: 100%;
+}
+.tooltip-text {
+  position: absolute;
+  bottom: 155%;
+  left: 0;
+  width: 100%;
+  background-color: var(--black-color);
+  padding: 48px 28px;
+  color: var(--white-color);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 45px;
+  border: 1.5px solid var(--green-color);
+  z-index: 99;
+}
+.tooltip-text::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 8.4%;
+  border-width: 20px;
+  border-style: solid;
+  border-color: var(--green-color) transparent transparent transparent;
+}
+.testimonials-name {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--green-color);
+  display: block;
+  margin-left: 2rem;
+}
+.testimonials-position {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: block;
+  color: var(--white-color);
+  margin-left: 2rem;
 }
