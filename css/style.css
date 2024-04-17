@@ -601,8 +601,8 @@ input[type="checkbox"] {
   padding: 8rem 2rem;
   background-image: url(../assets/images/contact-bg.png);
   background-repeat: no-repeat;
-  background-position: -7.6rem -2rem;
-  background-size: cover;
+  background-position: -7.44rem 4rem;
+  background-size:auto;
 }
 input,
 .contact-form > label,
