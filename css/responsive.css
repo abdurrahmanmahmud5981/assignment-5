@@ -1,4 +1,7 @@
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1400px) {
+  .contact-content {
+    background-position: 1.44rem 4rem;
+  }
   footer {
     max-width: 1440px;
     margin: 0 auto;
